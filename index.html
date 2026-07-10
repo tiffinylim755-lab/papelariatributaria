@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papelaria Tributária LTDA | Soluções Corporativas</title>
+    <style>
+        /* Configurações Gerais e Cores Modernas */
+        :root {
+            --primary: #0f172a;       /* Azul Escuro Corporativo (Seriedade) */
+            --secondary: #0284c7;     /* Azul de Destaque */
+            --accent: #e2e8f0;        /* Cinza Claro para Divisórias */
+            --text-main: #1e293b;     /* Texto Principal */
+            --text-muted: #64748b;    /* Texto Secundário */
+            --bg-light: #f8fafc;      /* Fundo Claro */
+            --white: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* Cabeçalho / Navegação */
+        header {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo h1 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--secondary);
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary);
+        }
+
+        /* Seção Hero (Abertura Impactante) */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%);
+            color: var(--white);
+            padding: 80px 5%;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary);
+            color: var(--white);
+            padding: 12px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .cta-button:hover {
+            background-color: #0369a1;
+            transform: translateY(-2px);
+        }
+
+        /* Container de Conteúdo */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+            color: var(--primary);
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background-color: var(--secondary);
+            border-radius: 2px;
+        }
+
+        /* Grid de Serviços */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            border-top: 4px solid var(--secondary);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-card h3 {
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+            color: var(--primary);
+        }
+
+        .service-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Seção Sobre / Informações de Registro */
+        .about-section {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            margin-top: 40px;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .info-table th, .info-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--accent);
+        }
+
+        .info-table th {
+            background-color: #f1f5f9;
+            color: var(--primary);
+            font-weight: 600;
+            width: 30%;
+        }
+
+        .status-badge {
+            background-color: #dcfce7;
+            color: #15803d;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.85rem;
+        }
+
+        /* Duas Colunas: Localização e Contato */
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            nav a {
+                margin: 0 10px;
+            }
+        }
+
+        .contact-box, .location-box {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .info-item {
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        .info-item strong {
+            color: var(--primary);
+        }
+
+        .address-box {
+            background-color: #f1f5f9;
+            border: 1px dashed #cbd5e1;
+            padding: 15px;
+            margin-top: 15px;
+            font-family: monospace;
+            font-size: 0.9rem;
+            color: #334155;
+            white-space: pre-line;
+            border-radius: 4px;
+        }
+
+        .phone-list {
+            list-style: none;
+            margin-top: 8px;
+        }
+
+        .phone-list li {
+            margin-bottom: 6px;
+            color: var(--text-main);
+        }
+
+        /* Rodapé Final */
+        footer {
+            background-color: var(--primary);
+            color: #94a3b8;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.85rem;
+            margin-top: 60px;
+            border-top: 3px solid var(--secondary);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>PAPELARIA <span>TRIBUTÁRIA</span></h1>
+        </div>
+        <nav>
+            <a href="#servicos">Serviços</a>
+            <a href="#registro">Institucional</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Eficiência e Solidez em Suprimentos Corporativos</h2>
+        <p>Há quase 40 anos atendendo com excelência as demandas de gestão de documentos, logística tributária e suprimentos no atacado.</p>
+        <a href="#contato" class="cta-button">Fale Conosco</a>
+    </section>
+
+    <div class="container">
+
+        <section id="servicos">
+            <h2 class="section-title">Principais Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Suprimento Corporativo B2B</h3>
+                    <p>Logística integrada e fornecimento sob demanda de materiais de escritório, informática e papelaria técnica para médias e grandes empresas.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Linha Fiscal e Formulários</h3>
+                    <p>Distribuição de impressos padronizados, formulários contínuos e suprimentos focados estritamente em atender rotinas fiscais.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Gestão de Documentos</h3>
+                    <p>Soluções inteligentes de organização, armazenamento corporativo e arquivamento estratégico com foco contábil.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Atendimento a Licitações</h3>
+                    <p>Divisão especializada para participar de editais públicos, com total conformidade jurídica e segurança operacional.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="registro" class="about-section">
+            <h2 class="section-title">Informações Cadastrais</h2>
+            <table class="info-table">
+                <tr>
+                    <th>Razão Social</th>
+                    <td>Papelaria Tributaria LTDA</td>
+                </tr>
+                <tr>
+                    <th>Nome Fantasia</th>
+                    <td>Papelaria Tributaria</td>
+                </tr>
+                <tr>
+                    <th>CNPJ</th>
+                    <td>00.905.760/0003-00 (Tipo: Filial)</td>
+                </tr>
+                <tr>
+                    <th>Inscrição Estadual</th>
+                    <td>809.011.137.117 (SP)</td>
+                </tr>
+                <tr>
+                    <th>Fundação</th>
+                    <td>27/01/1988 (38 anos de solidez no mercado)</td>
+                </tr>
+                <tr>
+                    <th>Capital Social</th>
+                    <td>R$ 5.500.000,00</td>
+                </tr>
+                <tr>
+                    <th>Natureza Jurídica</th>
+                    <td>Sociedade Empresária Limitada</td>
+                </tr>
+                <tr>
+                    <th>Enquadramento</th>
+                    <td>Sem Enquadramento (Não optante pelo Simples Nacional ou MEI)</td>
+                </tr>
+                <tr>
+                    <th>Situação Cadastral</th>
+                    <td><span class="status-badge">ATIVA</span> <span style="color: var(--text-muted); font-size: 0.9rem; margin-left: 5px;">desde 26/12/2012</span></td>
+                </tr>
+            </table>
+        </section>
+
+        <div id="contato" class="footer-grid">
+            
+            <div class="location-box">
+                <h3 style="color: var(--primary); margin-bottom: 20px; font-size: 1.4rem;">📍 Localização</h3>
+                <div class="info-item"><strong>Logradouro:</strong> Avenida Perimetral Norte, 4056</div>
+                <div class="info-item"><strong>Complemento:</strong> Gleba 03</div>
+                <div class="info-item"><strong>Bairro:</strong> Vila Joao Vaz</div>
+                <div class="info-item"><strong>Cidade/UF:</strong> Goiânia - GO</div>
+                <div class="info-item"><strong>CEP:</strong> 74445-190</div>
+                
+                <p style="margin-top: 15px; font-weight: 600; color: var(--text-muted); font-size: 0.9rem;">Para Correspondência:</p>
+                <div class="address-box">Papelaria Tributaria Papelaria Tributaria LTDA
+Avenida Perimetral Norte 4056 Gleba 03
+Vila Joao Vaz
+Goiânia GO
+74445-190</div>
+            </div>
+
+            <div class="contact-box">
+                <h3 style="color: var(--primary); margin-bottom: 20px; font-size: 1.4rem;">📞 Canais de Comunicação</h3>
+                <div class="info-item">
+                    <strong>E-mail Institucional:</strong><br>
+                    <a href="mailto:contabil@tbtmais.com.br" style="color: var(--secondary); text-decoration: none; font-weight: 600;">contabil@tbtmais.com.br</a>
+                </div>
+                <div class="info-item" style="margin-top: 20px;">
+                    <strong>Central de Atendimento:</strong>
+                    <ul class="phone-list">
+                        <li>🔹 (62) 3235-8200</li>
+                        <li>🔹 (62) 3235-8216</li>
+                        <li>🔹 (62) 3293-3548</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Papelaria Tributária LTDA. Todos os direitos reservados. Soluções e Solidez Institucional.</p>
+    </footer>
+
+</body>
+</html>
